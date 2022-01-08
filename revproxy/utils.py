@@ -124,8 +124,6 @@ def set_response_headers(response, response_headers):
 
         response[header.title()] = value
 
-    logger.debug('Response headers: %s', getattr(response, '_headers'))
-
 
 def normalize_request_headers(request):
     r"""Function used to transform header, replacing 'HTTP\_' to ''
